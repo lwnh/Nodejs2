@@ -56,7 +56,7 @@ router.route('/mail/write').post(upload.array('photo', 1), (req, res) => {
             service: 'gmail',
             auth:{
                 user: 'eo8umm@gmail.com',
-                pass: 'dldbal123!@#'
+                pass: 'password'
             },
             host: 'smtp.gmail.com',
             port: '465'
