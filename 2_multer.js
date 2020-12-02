@@ -20,7 +20,7 @@ const storage = multer.diskStorage({
     },
     filename: (req, file, callback) => {
         const extension = path.extname(file.originalname);  // 확장명 저장
-        const basename = path.basename(file.originalname, extension);   // 파일명과 확장명 저장
+        const basename = path.basename(file.originalname, extension);   // 확장명을 뺀 파일명 저장
         callback(null, basename + "_" + Date.now() + extension);
     }
 });
